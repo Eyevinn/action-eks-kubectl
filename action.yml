@@ -1,0 +1,14 @@
+name: 'EKS-vended Kuberentes (k8s) kubectl'
+description: 'GitHub Action for interacting with EKS-vended kubectl (k8s)'
+author: 'Jonas Rydholm Birmé <jonas.birme@eyevinn.se>'
+branding:
+  icon: 'terminal'
+  color: 'blue'
+inputs:
+  REGION:
+    description: 'AWS Region for the Cluster'
+  CLUSTER:
+    description: 'Cluster name'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
