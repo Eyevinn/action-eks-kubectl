@@ -1,4 +1,4 @@
-name: 'EKS-vended Kuberentes (k8s) kubectl'
+name: 'EKS-vended Kubernetes (k8s) kubectl'
 description: 'GitHub Action for interacting with EKS-vended kubectl (k8s)'
 author: 'Jonas Rydholm Birmé <jonas.birme@eyevinn.se>'
 branding:
