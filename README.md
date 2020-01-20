@@ -5,7 +5,7 @@ GitHub Action for interacting with EKS-vended Kubernetes cluster.
 To use this action put this step into your workflow:
 
 ```
-- uses: Eyevinn/action-eks-kubectl@latest
+- uses: Eyevinn/action-eks-kubectl@master
   env:
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -44,7 +44,7 @@ jobs:
         id: get_version
         run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
       - name: Deploy new version
-        uses: Eyevinn/action-eks-kubectl@latest
+        uses: Eyevinn/action-eks-kubectl@master
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
