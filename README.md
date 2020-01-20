@@ -5,7 +5,7 @@ GitHub Action for interacting with EKS-vended Kubernetes cluster.
 To use this action put this step into your workflow:
 
 ```
-- uses: Eyevinn/action-eks-kubectl@master
+- uses: Eyevinn/action-eks-kubectl@latest
   env:
     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
