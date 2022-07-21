@@ -4,10 +4,10 @@ MAINTAINER Eyevinn Technology <work@eyevinn.se>
 WORKDIR /usr/local/bin
 
 RUN apk add --no-cache --update openssl curl ca-certificates && \
-  curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.9/2020-08-04/bin/linux/amd64/kubectl && \
+  curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.22.6/2022-03-09/bin/linux/amd64/kubectl && \
   chmod +x ./kubectl && \
   rm -rf /var/cache/apk/*
-RUN curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.9/2020-08-04/bin/linux/amd64/aws-iam-authenticator && \
+RUN curl -o aws-iam-authenticator https://s3.us-west-2.amazonaws.com/amazon-eks/1.21.2/2021-07-05/bin/linux/amd64/aws-iam-authenticator && \
   chmod +x ./aws-iam-authenticator
 RUN apk add --no-cache --update python3 && pip3 install awscli --upgrade
 
